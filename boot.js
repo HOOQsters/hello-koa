@@ -9,9 +9,13 @@ const app = new Koa(),
           });
       }
 
-// catch all
 app.use(async (ctx, next) => {
-    ctx.body = {};
+    const hello = 'world';
+    ctx.body = { hello };
+    await next();
+});
+
+app.use(async (ctx, next) => {
     ctx.type = 'application/json';
     ctx.status = 200;
 });
