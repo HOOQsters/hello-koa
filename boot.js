@@ -4,8 +4,9 @@ import Koa from 'koa';
 
 const app = new Koa(),
       listen = () => {
-          app.listen(process.env.PORT || 3000, (err) => {
-              console.log(err || (process.env.PORT || 3000));
+          const port = process.env.PORT || 3000;
+          app.listen(port, (err) => {
+              console.log(err || `~> ${port}`);
           });
       }
 
