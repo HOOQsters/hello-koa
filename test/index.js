@@ -11,7 +11,8 @@ describe('Test', () => {
 
     it('should be ok', async () => {
         tester.get('/')
-              .expect(200);
+              .expect(200)
+              .expect({ hello: 'world' });
     });
 });
 
