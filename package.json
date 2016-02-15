@@ -1,7 +1,7 @@
 {
-  "name": "koa-app-base",
+  "name": "hello-koa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello, Koa!",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/babel-node ./node_modules/.bin/_mocha",
@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",
-    "babel-eslint": "^4.1.8",
     "mocha": "^2.4.5",
     "supertest": "^1.2.0",
     "supertest-as-promised": "^2.0.2"
